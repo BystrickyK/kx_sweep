@@ -15,6 +15,7 @@ circ = 0:0.05:2*pi+0.06;
 % array of unit vectors with different angles
 x_circ = [cos(circ); sin(circ)];
 
+%% Initialize the plot window
 f = figure('Position', [250, 250, 1000, 1200]);
 
 % Plot a circle with radius gamma
