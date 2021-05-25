@@ -100,7 +100,7 @@ writerObj = VideoWriter('animation');
 writerObj.FrameRate = 5;
 
 open(writerObj);
-for k = 2:length(frames)
+for k = 1:length(frames)
    frame = frames(k);
    writeVideo(writerObj, frame);
 end
