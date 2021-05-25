@@ -12,6 +12,8 @@ gamma_sq = gamma^2;
 
 % vector of angles 0 to 2pi
 circ = 0:0.05:2*pi+0.06;
+% array of unit vectors with different angles
+x_circ = [cos(circ); sin(circ)];
 
 f = figure('Position', [250, 250, 1000, 1200]);
 
