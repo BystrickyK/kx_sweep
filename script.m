@@ -62,9 +62,6 @@ k = 100;
 frames = [];
 % while max value of Kx is >3
 while k > 3
-
-    % decrease K norm
-    K = round(K.*0.99, 2);
     
     % Schur LMI
     lm = [1, K;
@@ -93,6 +90,9 @@ while k > 3
     
     k = max(Kx);
     frames = [frames, getframe(f)];
+    
+    % decrease K norm for the next iteration
+    K = round(K.*0.99, 2);
 end
 
 %% Save the animation
